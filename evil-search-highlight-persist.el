@@ -143,7 +143,7 @@ really want to highlight up to %d chars?  "
 
 (defface evil-search-highlight-persist-highlight-face
   '((((class color))
-     (:background "yellow1")))
+     (:background "purple3")))
   "Face for the highlighted text."
   :group 'evil-search-highlight-persist)
 
