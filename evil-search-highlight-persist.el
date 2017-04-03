@@ -141,18 +141,18 @@ really want to highlight up to %d chars?  "
   :group 'environment)
 
 
+(defcustom evil-search-highlight-background-colour "yellow1" "background colour of highlighted text")
 (defface evil-search-highlight-persist-highlight-face
-  '((((class color))
-     (:background "purple3")))
+  `((((class color))
+     (:background , evil-search-highlight-background-colour)))
   "Face for the highlighted text."
   :group 'evil-search-highlight-persist)
-
 
 (defun evil-search-highlight-persist-remove-all ()
   (interactive)
   (hlt-unhighlight-region-in-buffers (list (current-buffer))))
 
-(defvar evil-search-highlight-string-min-len 1 "min legth")
+(defcustom evil-search-highlight-string-min-len 1 "min length")
 (defun evil-search-highlight-persist-mark ()
   (let ((hlt-use-overlays-flag t)
         (hlt-last-face 'evil-search-highlight-persist-highlight-face)
