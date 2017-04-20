@@ -9,6 +9,10 @@ search-highlight-persist-remove-all command (default binding to =C-x SPC=). This
 is how Vim search works by default when you enable hlsearch. This extension requires the 
 "highlight" extension.
 
+[[http://i.imgur.com/Rky7Gj0.png]]
+
+* Usage
+
 To enable:
 
 #+BEGIN_SRC emacs-lisp
@@ -24,4 +28,12 @@ To change the default highlight face:
 (set-face-foreground 'evil-ex-lazy-highlight "black")
 #+END_SRC
 
-[[http://i.imgur.com/Rky7Gj0.png]]
+* Alternatives
+
+This behavior is built-in to Evil if one if using the evil-search module:
+#+BEGIN_SRC emacs-lisp
+(setq evil-search-module 'evil-search)
+#+END_SRC
+However, this is not available when using isearch, which I beleive provides a
+superior searching experience. This package would be made obsolete if evil-search
+was tweaked to behave [[https://github.com/emacs-evil/evil/issues/813][more like isearch]].
