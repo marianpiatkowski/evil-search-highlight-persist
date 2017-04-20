@@ -141,10 +141,9 @@ really want to highlight up to %d chars?  "
   :group 'environment)
 
 
-(defcustom evil-search-highlight-background-colour "yellow1" "background colour of highlighted text")
 (defface evil-search-highlight-persist-highlight-face
-  `((((class color))
-     (:background , evil-search-highlight-background-colour)))
+  '((((class color))
+     (:background "yellow1")))
   "Face for the highlighted text."
   :group 'evil-search-highlight-persist)
 

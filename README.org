@@ -17,4 +17,11 @@ To enable:
 (global-evil-search-highlight-persist t)
 #+END_SRC
 
+To change the default highlight face:
+
+#+BEGIN_SRC emacs-lisp
+(set-face-background 'evil-ex-lazy-highlight "gold")
+(set-face-foreground 'evil-ex-lazy-highlight "black")
+#+END_SRC
+
 [[http://i.imgur.com/Rky7Gj0.png]]
