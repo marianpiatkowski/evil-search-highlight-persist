@@ -21,11 +21,24 @@ To enable:
 (global-evil-search-highlight-persist t)
 #+END_SRC
 
+To only highlight strings whose length is great than or equal to 3
+
+#+BEGIN_SRC emacs-lisp
+(setq evil-search-highlight-string-min-len 3)
+#+END_SRC
+
 To change the default highlight face:
 
 #+BEGIN_SRC emacs-lisp
 (set-face-background 'evil-ex-lazy-highlight "gold")
 (set-face-foreground 'evil-ex-lazy-highlight "black")
+#+END_SRC
+
+To enable highlighting ( and un-highlighting ) across *all* windows, similiar
+to what Vim does:
+
+#+BEGIN_SRC emacs-lisp
+(setq evil-search-highlight-persist-all-windows t)
 #+END_SRC
 
 * Alternatives
@@ -35,5 +48,8 @@ This behavior is built-in to Evil if one if using the evil-search module:
 (setq evil-search-module 'evil-search)
 #+END_SRC
 However, this is not available when using isearch, which I beleive provides a
-superior searching experience. This package would be made obsolete if evil-search
-was tweaked to behave [[https://github.com/emacs-evil/evil/issues/813][more like isearch]].
+superior searching experience. This package also provides the benefit of being
+able to highlight all current windows, simliar to what Vim does.
+
+In my opinion, this package would be made obsolete if evil-search was tweaked to
+behave [[https://github.com/emacs-evil/evil/issues/813][more like isearch]], and once evil supports [[https://github.com/emacs-evil/evil/issues/805][highlighting across all windows]].
