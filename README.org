@@ -9,7 +9,7 @@ search-highlight-persist-remove-all command (default binding to =C-x SPC=). This
 is how Vim search works by default when you enable hlsearch. This extension requires the 
 "highlight" extension.
 
-[[http://i.imgur.com/Rky7Gj0.png]]
+[[http://i.imgur.com/mwANxIA.png]]
 
 * Usage
 
