@@ -182,7 +182,7 @@ really want to highlight up to %d chars?  "
     (if (>= (length tmp) evil-search-highlight-string-min-len)
         (if evil-search-highlight-persist-all-windows
             (progn
-              (dolist (buf (buffer-list))
+              (dolist (buf (delete-dups (mapcar 'window-buffer (window-list))))
                 (hlt-highlight-regexp-region-in-buffers tmp (list buf))))
           (hlt-highlight-regexp-region-in-buffers tmp (list (current-buffer))))
       ))
