@@ -163,6 +163,7 @@ really want to highlight up to %d chars?  "
 
 
 (defun evil-search-highlight-persist-remove-all ()
+  (interactive)
   (if evil-search-highlight-persist-all-windows
       (dolist (buf (buffer-list))
         (hlt-unhighlight-region-in-buffers (list buf)))
