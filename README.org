@@ -2,7 +2,7 @@
 
 [[http://melpa.milkbox.net/#/evil-search-highlight-persist][file:http://melpa.milkbox.net/packages/evil-search-highlight-persist-badge.svg]]
 
-This is a fork of the [[https://github.com/juanjux/evil-search-highlight-persist][original]] evil-search-highlight-persist. 
+This is a fork of the [[https://github.com/juanjux/evil-search-highlight-persist][original]], unmaintained, evil-search-highlight-persist. 
 
 This Emacs extension will make =isearch= and =evil-ex-search-incremental= (the "slash
 search") to highlight the search term (taken as a regexp) in all the buffer and
