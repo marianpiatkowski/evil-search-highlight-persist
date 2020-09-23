@@ -67,9 +67,9 @@
 
 (require 'advice)
 (require 'highlight)
-(require 'evil-search)
+(require 'evil-search nil 'noerror)
 
-;; TODO: The above code seems like it copied from highlight.el and slightly
+;; TODO: The code below seems like it copied from highlight.el and slightly
 ;; modified. This seems like the wrong thing to do, but it works for now.
 (defvar evil-search-highlight-regex-flag t)
 (defun hlt-+/--highlight-regexp-region (unhighlightp start end regexp face msgp mousep nth &optional buffers)
