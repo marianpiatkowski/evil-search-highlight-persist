@@ -1,14 +1,12 @@
 #+TITLE: Emacs Evil-Search-Highlight-Persist Minor Mode
 
-[[http://melpa.milkbox.net/#/evil-search-highlight-persist][file:http://melpa.milkbox.net/packages/evil-search-highlight-persist-badge.svg]]
-
-This is a fork of the [[https://github.com/juanjux/evil-search-highlight-persist][original]], unmaintained, evil-search-highlight-persist. 
+This is a fork of the [[https://github.com/juanjux/evil-search-highlight-persist][original]], unmaintained, evil-search-highlight-persist.
 
 This Emacs extension will make =isearch= and =evil-ex-search-incremental= (the "slash
 search") to highlight the search term (taken as a regexp) in all the buffer and
 persistently until you make another search or clear the highlights with the
 search-highlight-persist-remove-all command (default binding to =C-x SPC=). This
-is how Vim search works by default when you enable hlsearch. This extension requires the 
+is how Vim search works by default when you enable hlsearch. This extension requires the
 "highlight" extension.
 
 [[http://i.imgur.com/mwANxIA.png]]
