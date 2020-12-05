@@ -27,11 +27,13 @@ To only highlight strings with length greater than or equal to 3
 (setq evil-search-highlight-string-min-len 3)
 ```
 
-To change the default highlight face:
+To change the default highlight face to blue color:
 
 ```cl
-(set-face-background 'evil-ex-lazy-highlight "gold")
-(set-face-foreground 'evil-ex-lazy-highlight "black")
+(face-spec-set
+  'evil-search-highlight-persist-highlight-face
+  '((((class color))
+     (:background "blue1"))))
 ```
 
 To enable highlighting (and un-highlighting) across *all* windows, similar to what Vim does:
